@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "js-ast-ql",
   description: "Fast Javascript ast library.",
-  base: "/dist",
+  base: "/js-ast-ql/dist",
   outDir: "./dist",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
