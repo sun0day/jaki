@@ -4,4 +4,4 @@
 
 A fast and simple Javascript ast query and manipulation library.
 
-Check [official document](https://sun0day.github.io/svg-sketchy/) for more details.
+Check [official document](https://sun0day.github.io/js-ast-ql/) for more details.
