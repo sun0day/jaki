@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as e}from"./chunks/framework.B4IhSLAB.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/ast.md","filePath":"api/ast.md"}'),s={name:"api/ast.md"};function r(o,c,n,p,i,_){return e(),a("div")}const f=t(s,[["render",r]]);export{m as __pageData,f as default};

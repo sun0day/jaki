@@ -11,15 +11,15 @@ hero:
       text: Quick Start
       link: /quick-start
     - theme: alt
-      text: API reference
+      text: API Reference
       link: /api-examples
 
 features:
-  - title: Blazing fast
+  - title: High performance
     details: Based on <b><code>swc-query</code></b>, it's fast
-  - title: Super simple
+  - title: Simple, extensible 
     details: <b><code>js-ast-ql</code></b> APIs are quite simple and flexible to use
-  - title: Rich advanced APIs
+  - title: Rich APIs
     details: In addition to the basic API, there are also rich advanced APIs for developers to use
 
 

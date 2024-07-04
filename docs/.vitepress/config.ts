@@ -1,40 +1,60 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "js-ast-ql",
   description: "Fast Javascript ast library.",
   base: "/js-ast-ql/dist",
   outDir: "./dist",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Doc', link: '/introduction' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Guide', link: '/guide/introduction' },
+      { text: 'API', link: '/api/parse' },
+      { text: 'Roadmap', link: '/roadmap' }
     ],
 
-    sidebar: [
-      {
-        text: "Introduction",
-        link: "/introduction"
-      },
-      {
-        text: "Quick Start",
-        link: "/quick-start"
-      },
-      {
-        text: 'Query API',
-        items: [
-          { text: 'Basic Query', link: '/basic-query' },
-          //{ text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
-      {
-        text: 'Roadmap',
-        link: "/roadmap"
-      }
-    ],
-
+    sidebar: {
+      "/guide/": [
+        {
+          text: "Introduction",
+          link: "/guide/introduction",
+        },
+        {
+          text: "Quick Start",
+          link: "/guide/quick-start",
+        },
+      ],
+      "/api/": [
+        {
+          text: "ESTree",
+          link: "/api/estree",
+        },
+        {
+          text: "parse",
+          link: "/api/parse"
+        },
+        {
+          text: "Query",
+          items: [{
+            text: "Ast",
+            link: "/api/ast"
+          }, {
+            text: "AstNode",
+            collapsed: true,
+            items: [{
+              text: "VariableDeclaration",
+              link: "/api/variable-declaration"
+            }]
+          }]
+        }, 
+        {
+          text: "Shift",
+          items: [{
+            text: "shift",
+            link: "/api/shift"
+          }]
+        }
+      ]
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sun0day/js-ast-ql' }
     ]
