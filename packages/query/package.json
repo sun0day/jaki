@@ -1,0 +1,32 @@
+{
+  "name": "js-ast-ql",
+  "type": "module",
+  "version": "0.0.0",
+  "private": false,
+  "description": "javascript ast query lib",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sun0day/js-ast-ql.git"
+  },
+  "exports": {
+    ".": {
+      "default": {
+        "require": "./sketcher.cjs",
+        "default": "./sketcher.js"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "acorn": "^8.12.1",
+    "acorn-walk": "^8.3.3",
+    "fast-glob": "^3.3.2"
+  }
+}
