@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "js-ast-ql"
-  text: "Fast and simple Javascript ast library."
+  text: "Powerful Javascript ast library."
   tagline: Query and manipulate ast like a pro
   actions:
     - theme: brand
@@ -16,12 +16,12 @@ hero:
 
 features:
   - title: ⚡ High performance
-    details: Based on <b><code>swc-query</code></b>, it's fast
+    details: Scan tons of files in seconds
   - title: ☘️	Simple, extensible 
-    details: <b><code>js-ast-ql</code></b> APIs are quite simple and flexible to use
+    details: Simple and flexible APIs
   - title: 🦄  Type friendly
-    details: <b><code>js-ast-ql</code></b> APIs are friendly to intelligent type inference
-  - title: 🌈  Rich add-ons
-    details: In addition to the basic APIs, there are also rich advanced APIs for developers to use
+    details: Intelligent type inference
+  - title: 🌈   Rich add-ons
+    details: Rich advanced APIs in addition to the basic ones
 
 
