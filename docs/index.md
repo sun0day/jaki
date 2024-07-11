@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "js-ast-ql"
   text: "Powerful Javascript ast library."
-  tagline: Query and manipulate ast like a pro
+  tagline: Play ast like a pro
   actions:
     - theme: brand
       text: Quick Start
@@ -17,11 +17,9 @@ hero:
 features:
   - title: ⚡ High performance
     details: Scan tons of files in seconds
-  - title: ☘️	Simple, extensible 
-    details: Simple and flexible APIs
+  - title: ☘️	Simple and extensible
+    details: Functional programming APIs
   - title: 🦄  Type friendly
     details: Intelligent type inference
   - title: 🌈   Rich add-ons
     details: Rich advanced APIs in addition to the basic ones
-
-
