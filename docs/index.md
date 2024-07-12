@@ -19,7 +19,7 @@ features:
     details: Scan tons of files in seconds
   - title: ☘️	Simple and extensible
     details: Functional programming APIs
-  - title: 🦄  Type friendly
+  - title: 🦄  Type safe
     details: Intelligent type inference
   - title: 🌈   Rich add-ons
     details: Rich advanced APIs in addition to the basic ones
