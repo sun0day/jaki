@@ -3,17 +3,29 @@
   "type": "module",
   "version": "0.0.0",
   "private": false,
-  "description": "javascript ast query lib",
+  "description": "Powerful Javascript ast query lib",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/sun0day/js-ast-ql.git"
   },
+  "keywords": [
+    "js-ast-ql",
+    "ast",
+    "ast-query",
+    "ast-transform",
+    "parser",
+    "espree",
+    "acorn",
+    "typescript",
+    "ts-pattern",
+    "codeshift"
+  ],
   "exports": {
     ".": {
       "default": {
-        "require": "./sketcher.cjs",
-        "default": "./sketcher.js"
+        "require": "./index.cjs",
+        "default": "./index.js"
       }
     }
   },
@@ -25,7 +37,6 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "acorn": "^8.12.1",
     "acorn-walk": "^8.3.3",
     "fast-glob": "^3.3.2"
   }
