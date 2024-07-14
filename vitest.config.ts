@@ -6,7 +6,7 @@ export default defineConfig({
   test: {
     globals: true,
     testTimeout: 10000,
-    root: './packages/cli/',
+    root: './packages',
     setupFiles: resolve(process.cwd(), './vitest.setup.ts'),
     coverage: {
       enabled: true,
