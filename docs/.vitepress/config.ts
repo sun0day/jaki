@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'js-ast-ql',
+  title: 'jaki',
   description: 'Fast Javascript ast library.',
-  base: '/js-ast-ql/dist',
+  base: '/jaki/dist',
   outDir: './dist',
   ignoreDeadLinks: true,
   themeConfig: {
@@ -58,7 +58,7 @@ export default defineConfig({
       ],
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/sun0day/js-ast-ql' },
+      { icon: 'github', link: 'https://github.com/sun0day/jaki' },
     ],
   },
 })

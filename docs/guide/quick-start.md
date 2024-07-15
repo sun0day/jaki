@@ -1,8 +1,8 @@
 # Quick start
 
 ```typescript
-import { parse, AstType, AstKind } from 'js-ast-ql'
-import { shift, act } from 'js-ast-ql.shift'
+import { parse, AstType, AstKind } from 'jaki'
+import { shift, act } from 'jaki.shift'
 
 // init ast from source code 
 const code = `let a = 1;let b = 2`

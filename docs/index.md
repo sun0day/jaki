@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "js-ast-ql"
+  name: "jaki"
   text: "Powerful Javascript ast library."
   tagline: Play ast like a pro
   actions:

@@ -1,22 +1,23 @@
 {
-  "name": "js-ast-ql",
+  "name": "jaki.espree",
   "type": "module",
   "version": "0.0.0",
   "private": false,
-  "description": "Powerful Javascript ast query lib",
+  "description": "Powerful Javascript ast toolkit",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sun0day/js-ast-ql.git"
+    "url": "https://github.com/sun0day/jaki.git"
   },
   "keywords": [
-    "js-ast-ql",
+    "jaki",
     "ast",
-    "ast-query",
-    "ast-transform",
+    "toolkit",
+    "query",
     "parser",
     "espree",
-    "acorn",
+    "estree",
+    "ecmascript",
     "typescript",
     "ts-pattern",
     "codeshift"

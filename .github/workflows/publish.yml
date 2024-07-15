@@ -37,7 +37,7 @@ jobs:
         run: |
           pnpm changeset version
           pnpm install --frozen-lockfile=false
-          pnpm publish -r --filter js-ast-ql... --access public --no-git-checks
+          pnpm publish -r --filter jaki... --access public --no-git-checks
       - name: Create Version PR
         run: |
           git config user.name github-actions
