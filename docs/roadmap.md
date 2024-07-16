@@ -7,6 +7,4 @@
 - `parse`
   - generate ast from `.js`, `.ts`, `.jsx`, `.tsx`
 - `Ast.query`
-  - search and return arbitrary ESTree node 
-
-
+  - search and return arbitrary ESTree node

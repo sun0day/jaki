@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 20
       - name: Install and build
-        run: pnpm install && pnpm build:all
+        run: pnpm install && pnpm build
       - name: Set npm
         run: |
           npm config set provenance true

@@ -4,7 +4,7 @@
 import { parse, AstType, AstKind } from 'jaki'
 import { shift, act } from 'jaki.shift'
 
-// init ast from source code 
+// init ast from source code
 const code = `let a = 1;let b = 2`
 const ast = parse(code)
 
@@ -43,7 +43,7 @@ console.log(node.json())
 // record how to modify the ast node
 const astActions = act(node).id("newA").kind(AstKind.Const)
 
-/* 
+/*
  * apply ast changes to source code,
  * new code would be `const newA = 1;let b = 2`
  */
