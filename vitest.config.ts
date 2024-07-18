@@ -11,7 +11,7 @@ export default defineConfig({
     coverage: {
       enabled: true,
       reporter: ['html', 'text'],
-      exclude: ['**/assets/', '**/coverage'],
+      exclude: ['**/assets/', '**/coverage', '**/fixtures'],
     },
   },
 })

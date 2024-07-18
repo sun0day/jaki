@@ -6,7 +6,10 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "test": "vitest --watch=false --config ./vitest.config.ts",
+    "build": "pnpm --filter=\"jaki*\" run build",
+    "test": "pnpm test:logic && pnpm test:type",
+    "test:logic": "vitest --watch=false --config ./vitest.config.ts",
+    "test:type": "pnpm --filter=\"jaki*\" run test:type",
     "test:watch": "vitest --watch --config ./vitest.config.ts",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
@@ -22,8 +25,8 @@
     "lint-staged": "^15.2.2",
     "simple-git-hooks": "^2.11.1",
     "tinybench": "^2.8.0",
-    "tsd": "^0.31.1",
     "tsup": "^8.1.0",
+    "typescript": "^5.5.3",
     "vitepress": "^1.2.3",
     "vitest": "^1.4.0"
   },

@@ -17,7 +17,7 @@ hero:
 features:
   - title: ⚡ High performance
     details: Scan tons of files in seconds
-  - title: ☘️	Simple and extensible
+  - title: ☘️ Simple and extensible
     details: Functional programming APIs
   - title: 🦄  Type safe
     details: Intelligent type inference
