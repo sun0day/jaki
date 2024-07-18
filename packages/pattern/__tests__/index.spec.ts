@@ -1,37 +1,50 @@
 import { describe, expect, it } from 'vitest'
-import type { Equal, Expect } from '@types'
-import type { NumberPattern, StringPattern } from 'ts-pattern/dist/types/Pattern'
-import { JP } from '../src'
+import type { Equal, Expect, ExpectFalse } from '@types'
+import { P, extend } from '../src'
 
 describe('test pattern', () => {
-  it('jP should inherit ts-pattern', () => {
-    expect(JP._).toBeDefined()
-    expect(JP.string).toBeDefined()
-
-    type JPT = typeof JP
-    type cases = [
-      Expect<Equal<JPT['string'], StringPattern>>,
-      Expect<Equal<JPT['number'], NumberPattern>>,
-    ]
-  })
-
-  it('extends JP', () => {
-    const newJP = JP.define({
+  it('extends ts-pattern', () => {
+    const JP = extend(P, {
       x: () => 1,
       y: (v: string) => v,
     })
 
-    expect(JP.x).toBeUndefined()
-    expect(newJP).not.toBe(JP)
-    expect(newJP._).toBe(JP._)
-    expect(newJP.define).toBeDefined()
-    expect(newJP.x()).toBe(1)
-    expect(newJP.y('')).toBe('')
+    // @ts-expect-error test P.x
+    expect(P.x).toBeUndefined()
+    expect(JP._).toBe(P._)
+    expect(JP.x()).toBe(1)
+    expect(JP.y('')).toBe('')
 
-    type NewJP = typeof newJP
+    type JPType = typeof JP
     type cases = [
-      Expect<Equal<NewJP['x'], () => number>>,
-      Expect<Equal<NewJP['y'], (v: string) => string>>,
+      ExpectFalse<'x' extends typeof P ? true : false>,
+      Expect<Equal<JPType['x'], () => number>>,
+      Expect<Equal<JPType['y'], (v: string) => string>>,
+    ]
+  })
+
+  it('extends twice', () => {
+    const JP = extend(P, {
+      x: () => 1,
+      y: (v: string) => v,
+    })
+    const nextJP = extend(JP, {
+      z: () => false,
+    })
+
+    // @ts-expect-error test JP.z
+    expect(JP.z).toBeUndefined()
+    expect(nextJP).not.toBe(JP)
+    expect(nextJP._).toBe(JP._)
+    expect(nextJP.x()).toBe(1)
+    expect(nextJP.y('')).toBe('')
+    expect(nextJP.z()).toBeFalsy()
+
+    type NextJP = typeof nextJP
+    type cases = [
+      Expect<Equal<NextJP['x'], () => number>>,
+      Expect<Equal<NextJP['y'], (v: string) => string>>,
+      Expect<Equal<NextJP['z'], () => boolean>>,
     ]
   })
 })
