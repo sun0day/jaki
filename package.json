@@ -24,7 +24,7 @@
     "eslint": "^8.0.0",
     "lint-staged": "^15.2.2",
     "simple-git-hooks": "^2.11.1",
-    "tinybench": "^2.8.0",
+    "tinybench": "^3.0.0",
     "tsup": "^8.1.0",
     "typescript": "^5.5.3",
     "vitepress": "^1.2.3",
